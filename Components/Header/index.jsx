@@ -16,10 +16,17 @@ export default function Header() {
               About
             </a>
           </li>
-          <li>
-            <a className={styles.linkHoverEffect} href="/ciphers">
+          <li className={`${styles.dropDownHover}`}>
+            <a className={`${styles.linkHoverEffect } `} href="/ciphers">
               Ciphers
             </a>
+            <div className={styles.dropDown}>
+            <ul>
+            <li>
+            <a href='ciphers/caesar'>Caesar Cipher</a>
+            </li>
+            </ul>
+            </div>
           </li>
         </ul>
       </nav>

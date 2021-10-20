@@ -5,7 +5,7 @@
     width: 100%;
     background-color: cornflowerblue;
     height: 85px;
-    top:0;
+    top: 0;
     margin-bottom: 30px;
     /* justify-content: flex-end; */
 }
@@ -23,9 +23,11 @@
     border-bottom: 4px solid #ffffff;
     padding: 0;
 }
+
 .title {
     position: absolute;
 }
+
 .Header>nav>ul {
     display: flex;
     flex-direction: row;
@@ -33,7 +35,6 @@
     list-style-type: none;
     position: relative;
     right: 0;
-    overflow: hidden;
     line-height: 40px;
 }
 
@@ -60,4 +61,19 @@
     font-style: normal;
     color: white;
     text-decoration: none;
+}
+
+.dropDown {
+    display: none;
+    position: relative;
+    width: 150px;
+    height: 400px;
+    background-color: green;
+    color: red;
+    right: 25px;
+    padding: 10px;
+}
+
+.dropDownHover:hover>.dropDown {
+    display: flex;
 }
